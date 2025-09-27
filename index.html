@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=d    .contact {
+      text-align: center;
+      margin: 3rem 0;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: 3rem auto;
+    }e-width, initial-scale=1.0">
+  <title>Staunch Electric</title>
+  <meta name="description" content="Mobile-first, clean electrician website for Staunch Electric.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd 0%, #f8f9fa 100%);
+      color: #222;
+      line-height: 1.6;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background: linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);
+      color: #fff;
+      padding: 3rem 1rem 2rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="bolt" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M10 5 L15 5 L12 12 L17 12 L10 20 L8 13 L3 13 Z" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23bolt)"/></svg>');
+      opacity: 0.3;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+      color: #bbdefb;
+      position: relative;
+      z-index: 1;
+    }
+    .section {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 0.8s ease-out;
+    }
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section h2 {
+      margin-top: 0;
+      color: #1976d2;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #ffd700;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .service {
+      background: linear-gradient(135deg, #f5f5f5 0%, #e8eaf6 100%);
+      padding: 1.5rem;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: background 0.3s ease;
+      border-left: 5px solid #ffd700;
+    }
+    .service:hover {
+      background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+    }
+    .service svg {
+      width: 40px;
+      height: 40px;
+      fill: #1976d2;
+      flex-shrink: 0;
+    }
+    .contact {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .contact a {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffd700 0%, #ffeb3b 100%);
+      color: #222;
+      font-weight: bold;
+      padding: 1.2rem 3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.3rem;
+      box-shadow: 0 4px 15px rgba(255,215,0,0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact a::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+    .contact a:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+    .contact a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255,215,0,0.4);
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem 2rem 1rem;
+      color: #666;
+      font-size: 1rem;
+      background: linear-gradient(135deg, #f5f5f5 0%, #e8eaf6 100%);
+      margin-top: 3rem;
+      position: relative;
+    }
+    footer::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #1976d2, transparent);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 0;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Staunch Electric</h1>
+    <p>Reliable. Professional. Local Electricians.</p>
+  </header>
+
+  <div class="section">
+    <h2>About Us</h2>
+    <p>Staunch Electric is your trusted partner for residential and commercial electrical services. We pride ourselves on quality workmanship, safety, and customer satisfaction. Serving our community with integrity and expertise.</p>
+  </div>
+
+  <div class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+        Electrical Repairs & Troubleshooting
+      </div>
+      <div class="service">
+        <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+        Lighting Installation & Upgrades
+      </div>
+      <div class="service">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+        Panel Upgrades & Safety Inspections
+      </div>
+      <div class="service">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        New Construction & Renovations
+      </div>
+      <div class="service">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        Emergency Services
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Our Work in High-Rises</h2>
+    <p>We specialize in high-rise electrical services, ensuring safety and efficiency at great heights.</p>
+    <div class="gallery">
+      <img src="https://replicate.delivery/xezq/NpynpigOUnrYPlScGhVXjc5H33rw0ibK9hxHwMpIhvI61TWF/out-0.png" alt="Electricians installing LED lights on high-rise facade" style="width: 100%; max-width: 400px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 1rem;">
+      <img src="https://replicate.delivery/xezq/WftSfgWJuiuVxEEd4ZEazubiuoNAdeX9iQluLDmYRbQed9kVB/out-0.png" alt="Electricians repairing panels in elevator shaft" style="width: 100%; max-width: 400px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 1rem;">
+    </div>
+  </div>
+
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>Call us today for a free estimate or to schedule service:</p>
+    <a href="tel:+15551234567">(555) 123-4567</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Staunch Electric. All rights reserved.
+  </footer>
+</body>
+</html>
